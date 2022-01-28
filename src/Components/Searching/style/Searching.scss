@@ -1,0 +1,156 @@
+.Searching {
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .search-input {
+    height: 20rem;
+    display: flex;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 8rem;
+    img {
+      height: 6rem;
+      background-color: #94ff3700;
+    }
+    button {
+      border: none;
+      height: 8rem;
+      padding: 3rem;
+      font-size: 1.5rem;
+      background-color: #00000000;
+      color: white;
+      transition: color 0.5s ease;
+      cursor: pointer;
+    }
+    button:hover {
+      color: #ffcd28;
+    }
+    button.fb {
+      padding: 0;
+      img {
+        height: 4rem;
+        border-radius: 0.2rem;
+      }
+    }
+    button.fb:hover {
+      filter: brightness(120%);
+    }
+    form {
+      padding-left: 1.5rem;
+      border-radius: 0.2rem;
+      margin-top: 1rem;
+      width: 30vw;
+      max-width: 700px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.253);
+      background-color: #fff;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      margin-bottom: 1.5rem;
+      input {
+        border: none;
+
+        background-color: #fff;
+
+        font-size: 1.5rem;
+        width: 100%;
+        justify-self: stretch;
+        align-self: center;
+        height: 4rem;
+      }
+      textarea:focus,
+      input:focus {
+        outline: none;
+      }
+      input.home {
+        width: 70vw;
+      }
+      .close {
+        display: none;
+      }
+      .button {
+        border-radius: 0.2rem;
+        background: url("../../../img/back.png") no-repeat center;
+        background-size: 2rem;
+        cursor: pointer;
+        height: 4rem;
+        background-color: #ffffff;
+        width: 5vw;
+        min-width: 4rem;
+      }
+      .button:hover {
+        background-color: #c7c7c7;
+      }
+      input[type="submit"] {
+        background: url("../../../img/magnifying-glass.png") no-repeat center;
+        border-radius: 0.2rem;
+        background-size: 2rem;
+        cursor: pointer;
+        width: 5vw;
+        min-width: 4rem;
+        height: 4rem;
+        background-color: #ffffff;
+      }
+      input[type="submit"]:hover {
+        background-color: #c7c7c7;
+      }
+    }
+  }
+  .loader {
+    border: 10px solid #bdbdbd; /* Light grey */
+    border-top: 10px solid #94ff37; /* Blue */
+    border-radius: 50%;
+    width: 10vmin;
+    height: 10vmin;
+    margin-top: 5rem;
+    animation: spin 2s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Search {
+    .search-input {
+      margin-top: 1rem;
+      img {
+        display: none;
+      }
+      form {
+        height: 100%;
+        display: flex;
+        margin-bottom: 1rem;
+
+        input {
+          width: 70vw;
+          height: 100%;
+          font-size: 1.5rem;
+          font-weight: 500;
+        }
+
+        input[type="submit"] {
+          transform: translateY(0%);
+        }
+        input[type="submit"]:hover {
+          background-color: #ffffff;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.Nav {
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0);
+  background-image: url("https://fwcdn.pl/onph/1985708/2022/78624_1.19.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+
+  height: 80vh;
+  .content:hover {
+    transition: all 0.5s ease;
+    backdrop-filter: brightness(0);
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    transition: all 0.5s ease;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.02) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+    .nav-bar {
+      width: 50vw;
+      background-color: rgba(255, 255, 255, 0);
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      ul {
+        background-color: rgba(255, 255, 255, 0);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li {
+          background-color: rgba(255, 255, 255, 0);
+          list-style: none;
+          padding: 1.5rem;
+          padding-left: 5rem;
+          padding-right: 5rem;
+          font-size: 1.5rem;
+          color: white;
+          transition: all 0.5s ease;
+          cursor: pointer;
+          border-bottom: 5px #ffcd2800 solid;
+        }
+        li:hover {
+          color: #ffcd28;
+          border-bottom: 5px #ffcd28 solid;
+        }
+      }
+    }
+  }
+}
